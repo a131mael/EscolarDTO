@@ -3,6 +3,7 @@ package org.aaf.escolar;
 
 import java.io.Serializable;
 
+
 import org.json.JSONObject;
 
 public class MemberDTO implements Serializable {
@@ -39,7 +40,17 @@ public class MemberDTO implements Serializable {
 	private String idCrianca4;
 	
 	private String idCrianca5;
+	
+	private String idContratoAtivo;
 
+	private boolean alertaProximidade;
+	
+	private int distanciaAlerta;
+	
+	private int quantidadeAcessos;
+	
+	private boolean enviarBoletosEmail;
+	
 	public MemberDTO() {
 	}
 
@@ -185,6 +196,46 @@ public class MemberDTO implements Serializable {
 
 	public void setIdCrianca5(String idCrianca5) {
 		this.idCrianca5 = idCrianca5;
+	}
+
+	public String getIdContratoAtivo() {
+		return idContratoAtivo;
+	}
+
+	public void setIdContratoAtivo(String idContratoAtivo) {
+		this.idContratoAtivo = idContratoAtivo;
+	}
+
+	public int getQuantidadeAcessos() {
+		return quantidadeAcessos;
+	}
+
+	public void setQuantidadeAcessos(int quantidadeAcessos) {
+		this.quantidadeAcessos = quantidadeAcessos;
+	}
+
+	public int getDistanciaAlerta() {
+		return distanciaAlerta;
+	}
+
+	public void setDistanciaAlerta(int distanciaAlerta) {
+		this.distanciaAlerta = distanciaAlerta;
+	}
+
+	public boolean isAlertaProximidade() {
+		return alertaProximidade;
+	}
+
+	public void setAlertaProximidade(boolean alertaProximidade) {
+		this.alertaProximidade = alertaProximidade;
+	}
+
+	public boolean isEnviarBoletosEmail() {
+		return enviarBoletosEmail;
+	}
+
+	public void setEnviarBoletosEmail(boolean enviarBoletosEmail) {
+		this.enviarBoletosEmail = enviarBoletosEmail;
 	}
 
 }

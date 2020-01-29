@@ -1,6 +1,7 @@
 package org.aaf.escolar;
 
 import java.io.Serializable;
+import java.util.Date;
 
 
 public class LocationDTO implements Serializable {
@@ -10,12 +11,16 @@ public class LocationDTO implements Serializable {
 	private Long id;
 
 	private String nome;
+	
+	private String nomeMapa;
 
 	private double latitude;
 
 	private double longitude;
 	
 	private String androidID;
+	
+	private Date dataUltimaAtualizacao;
 
 	public LocationDTO() {
 	}
@@ -78,6 +83,22 @@ public class LocationDTO implements Serializable {
 
 	public void setAndroidID(String androidID) {
 		this.androidID = androidID;
+	}
+
+	public String getNomeMapa() {
+		return nomeMapa;
+	}
+
+	public void setNomeMapa(String nomeMapa) {
+		this.nomeMapa = nomeMapa;
+	}
+
+	public Date getDataUltimaAtualizacao() {
+		return dataUltimaAtualizacao;
+	}
+
+	public void setDataUltimaAtualizacao(Date dataUltimaAtualizacao) {
+		this.dataUltimaAtualizacao = dataUltimaAtualizacao;
 	}
 
 }
