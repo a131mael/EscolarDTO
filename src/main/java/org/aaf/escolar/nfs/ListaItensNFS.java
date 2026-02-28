@@ -15,8 +15,8 @@ public class ListaItensNFS implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String codigo_local_prestacao_servico="8233";
-	private String codigo_item_lista_servico ="1601";
-	private String descritivo="serviço de transporte escolar.";
+	private String codigo_item_lista_servico ="160104";
+	private String descritivo="serviÃ§o de transporte escolar.";
 	private String aliquota_item_lista_servico="2,0100";
 	private String situacao_tributaria="00";
 	private String valor_tributavel;

@@ -1,5 +1,10 @@
 eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
 encoding//src/main/java/org/aaf/escolar/DevedorEnviar.java=UTF-8
 encoding//src/main/java/org/aaf/escolar/DividaEnviar.java=UTF-8
 encoding//src/main/java/org/aaf/escolar/EnviarTituloResponse.java=UTF-8
 encoding//src/main/java/org/aaf/escolar/StatusResponse.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding/<project>=UTF-8

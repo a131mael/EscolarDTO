@@ -3,7 +3,10 @@ package org.aaf.escolar;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class LocationRotaDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -14,14 +17,17 @@ public class LocationRotaDTO implements Serializable {
 	
 	private String nomeMapa;
 
+	@JsonProperty("lat")
 	private double latitude;
 
+	@JsonProperty("lon")
 	private double longitude;
 	
 	private String androidID;
 	
 	private int periodo;
 	
+	@JsonProperty("data")
 	private Date hora;
 	
 	public LocationRotaDTO() {

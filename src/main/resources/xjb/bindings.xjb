@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        jaxb:version="2.1">
+
+    <jaxb:bindings schemaLocation="xsd/ipm2026/wne_model_xsd_nota_fiscal.xsd">
+
+        <!-- Ajuste para atributo ID -->
+        <jaxb:bindings node="//xs:attribute[@name='ID']">
+            <jaxb:property name="idUpper"/>
+        </jaxb:bindings>
+
+        <!-- Ajuste para atributo Id -->
+        <jaxb:bindings node="//xs:attribute[@name='Id']">
+            <jaxb:property name="idLower"/>
+        </jaxb:bindings>
+
+    </jaxb:bindings>
+
+</jaxb:bindings>

@@ -51,6 +51,12 @@ public class MemberDTO implements Serializable {
 	
 	private boolean enviarBoletosEmail;
 	
+	private double latitude;
+
+	private double longitude; 
+	
+	private String phoneNumber;
+	
 	public MemberDTO() {
 	}
 
@@ -236,6 +242,30 @@ public class MemberDTO implements Serializable {
 
 	public void setEnviarBoletosEmail(boolean enviarBoletosEmail) {
 		this.enviarBoletosEmail = enviarBoletosEmail;
+	}
+
+	public double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 }
