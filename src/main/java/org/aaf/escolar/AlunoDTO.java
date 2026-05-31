@@ -26,7 +26,10 @@ public class AlunoDTO implements Serializable {
 	
 	private String enderecoAluno;
 
-	
+	private double latitudeAluno;
+
+	private double longitudeAluno;
+
 	private String idIrmao1;
 	private String idIrmao2;
 	private String idIrmao3;
@@ -143,6 +146,22 @@ public class AlunoDTO implements Serializable {
 
 	public void setEnderecoAluno(String enderecoAluno) {
 		this.enderecoAluno = enderecoAluno;
+	}
+
+	public double getLatitudeAluno() {
+		return latitudeAluno;
+	}
+
+	public void setLatitudeAluno(double latitudeAluno) {
+		this.latitudeAluno = latitudeAluno;
+	}
+
+	public double getLongitudeAluno() {
+		return longitudeAluno;
+	}
+
+	public void setLongitudeAluno(double longitudeAluno) {
+		this.longitudeAluno = longitudeAluno;
 	}
 
 	public String getIdIrmao1() {
