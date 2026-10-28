@@ -10,7 +10,7 @@ public class PrestadorNFS implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String cpfcnpj = "3660921000179";
+	private String cpfcnpj = "03660921000179";
 	private String cidade = "8233";
 
 	public PrestadorNFS() {

@@ -15,12 +15,14 @@ public class ListaItensNFS implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String codigo_local_prestacao_servico="8233";
-	private String codigo_item_lista_servico ="160104";
-	// Nomenclatura Brasileira de Serviços -- exigida pela prefeitura desde 2026,
-	// código de "Serviços de transporte escolar" (NBS 1.0401.12.10).
-	private String codigo_nbs="104011210";
-	private String descritivo="serviço de transporte escolar.";
-	private String aliquota_item_lista_servico="2,0100";
+	// 160104 era "transporte aquaviário" (errado); 160101 é o item correto de
+	// transporte coletivo municipal rodoviário, confirmado com a prefeitura.
+	private String codigo_item_lista_servico ="160101";
+	// NBS 1.0401.30.00 "Serviços de transporte integrado local de passageiros" --
+	// é o vínculo válido com o item 160101 nessa prefeitura (confirmado via teste).
+	private String codigo_nbs="104013000";
+	private String descritivo="transporte escolar";
+	private String aliquota_item_lista_servico="2,1067";
 	private String situacao_tributaria="00";
 	private String valor_tributavel;
 	private String valor_deducao="0,00";
