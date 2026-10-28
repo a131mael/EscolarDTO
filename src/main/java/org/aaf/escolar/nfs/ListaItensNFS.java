@@ -42,6 +42,12 @@ public class ListaItensNFS implements Serializable {
 	public void setCodigo_item_lista_servico(String codigo_item_lista_servico) {
 		this.codigo_item_lista_servico = codigo_item_lista_servico;
 	}
+	public String getCodigo_nbs() {
+		return codigo_nbs;
+	}
+	public void setCodigo_nbs(String codigo_nbs) {
+		this.codigo_nbs = codigo_nbs;
+	}
 	public String getDescritivo() {
 		return descritivo;
 	}
